@@ -184,7 +184,6 @@ function playQuraan () {
     playBtn.classList.remove("fa-play")
     playBtn.classList.add("fa-pause")
     playBtn.title = "pause surah"
-    let myIcons = Array.from(document.querySelectorAll("#testing"))
 
 
   
@@ -434,9 +433,7 @@ listPlayIcon.addEventListener("click",(e)=>{
 
 
 
-// $(allList ).on( "click", function() {
-//     $( "#myList" ).slideToggle(  );
-//   });
+
 allList.addEventListener("click",()=>{
     myList.classList.toggle("show")
 })
