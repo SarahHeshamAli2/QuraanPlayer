@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quraan-player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container ">
+       
+
+        <div class="quraanPlayerCard w-75 m-auto py-4">
+            <div class="upperPart d-flex justify-content-between">
+                <i class="fa-solid fa-chevron-down"></i>   
+                <h5>Now Playing</h5>    
+                <i class="fa-solid fa-ellipsis"></i>     
+            </div>
+            <div class="artistImg my-4">
+                <div class="artImg m-auto  ">
+                    <img src="./image.jpg" alt="" class="w-100 ">
+                </div>
+            </div>
+<div class="mid-div text-center">
+    <div class="soraName">
+        <h4 id="surahName">سورة الاخلاص</h4>
+        <span id="secNum" class="my-2 d-block">30</span>
+    </div>
+    <div class="artistName">
+        <p id="artistName">سعد الغامدي</p>
+    </div>
+</div>
+
+
+<div class="progress-area" id="progArea">
+    <div class="progress-bar " id="progBar">
+      <audio id="main-audio" src=""></audio>
+    </div>
+</div>
+    <div class="song-timer d-flex justify-content-between">
+        <span class="current-time" id="currTime">00:00</span>
+        <span class="max-duration" id="maxDuration">00:00</span>
+      </div>
+<div class="controls text-center my-2">
+    <i class="fa-solid fa-repeat" id="repeatList" title="repeat surah"></i>
+    <i class="fa-solid fa-backward-step mx-4 fa-2x" id="backBtn" title="previous surah"></i>
+    <i class="fa-solid fa-play fa-3x mx-4" id="playSong" title="play surah"></i>
+    <i class="fa-solid fa-forward-step mx-4 fa-2x" id="nextBtn" title="next surah"></i>
+    <i class="fa-solid fa-list" id="suraList" title="list of quraan"></i>
+
+
+</div>
+<div class="myList   p-5 rounded my-3" id="myList">
+ 
+            
+    <div  id="surahN">
+
+    </div>
+    <div id="listPlayIcon"></div>
+
+
+    <div id="artistN">
+
+    </div>
+    <div id="index">
+        
+    </div>
+
+
+</div>
+       
+    </div>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+    <script src="javaScript/quraan-list.js"></script>
+    <script src="javaScript/main.js"></script>
+</body>
+</html>

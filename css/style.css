@@ -1,0 +1,129 @@
+.artImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid rgb(189, 193, 195);
+}
+
+.controls i {
+    cursor: pointer;
+}
+:root {
+    --top-bg: #32373c;
+    --bottom-bg: #18191c;
+    --lightblack: #515c6f;
+    --white: #ffffff;
+    --lightbshadow: rgba(0, 0, 0, 0.15);
+    --main-color: #009bff;
+  }
+.top-bar,
+.progress-area .song-timer,
+.controls,
+.music-list .header,
+.music-list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-bar i {
+  font-size: 30px;
+  color: var(--lightblack);
+}
+.top-bar i:first-child {
+  margin-left: -7px;
+}
+.top-bar span {
+  font-size: 18px;
+  margin-left: -3px;
+  color: var(--lightblack);
+}
+.progress-area {
+    height: 6px;
+    width: 100%;
+    border-radius: 50px;
+    background: #f0f0f0;
+    cursor: pointer;
+  }
+  .progress-area .progress-bar {
+    height: inherit;
+    width: 0%;
+    position: relative;
+    border-radius: inherit;
+    background: linear-gradient(to right, var(--bottom-bg), var(--top-bg) 100%);
+  }
+  .progress-bar::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top: 50%;
+    right: -5px;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+    background: inherit;
+    transition: opacity 0.2s ease;
+  }
+  .progress-area:hover .progress-bar::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .progress-area .song-timer {
+    margin-top: 2px;
+  }
+
+  #playSong:hover {
+    color: #009bff;
+  }
+  #nextBtn:hover {
+    color: #009bff;
+  }
+  #backBtn:hover {
+    color: #009bff;
+  }
+  #surahN p:hover {
+    color: #009bff;
+  }
+  #artistN p:hover{
+    color: #009bff;
+  }
+
+  .myList {
+    display: none;
+    background-color: #fafafa;
+    transition: all 0.25s;
+    cursor: pointer;
+ 
+    
+
+  }
+
+  /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.show {
+  display: flex;
+  justify-content: space-between;
+}
+
